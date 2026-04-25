@@ -101,7 +101,7 @@
 <tr>
 <td width="50%">
 
-### 🦾 Autonomous Agricultural Robotics
+### 🦾 [Autonomous Agricultural Robotics] (In Progress)
 > Intelligent Robotics Major Project · University of Galway
 
 - Autonomous strawberry harvesting robot with **multi-sensor fusion** (LiDAR, IMU, camera, GNSS-RTK)
@@ -117,7 +117,7 @@
 </td>
 <td width="50%">
 
-### 👁️ AutoVision — Automated Object Annotation
+### 👁️ [AutoVision — Automated Object Annotation](https://github.com/akshitharsola/AutomationIMG)
 > Production CV pipeline · 90% detection accuracy
 
 - Reduced annotation time by **60%** (5h → 2h per 100 images)
