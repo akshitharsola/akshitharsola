@@ -1,29 +1,63 @@
 <!-- Header Wave -->
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=Akshit%20Harsola&fontSize=52&fontColor=fff&animation=twinkling&fontAlignY=38&desc=Android%20Engineer%20%E2%80%A2%20AI%20Agents%20%E2%80%A2%20Security%20Architect&descAlignY=58&descSize=20" />
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=Akshit%20Harsola&fontSize=52&fontColor=fff&animation=twinkling&fontAlignY=38&desc=Android%20%26%20iOS%20Engineer%20%E2%80%A2%20AI%20Agents%20%E2%80%A2%20Security%20Architect&descAlignY=58&descSize=20" />
 </div>
 
-<!-- Visitor Counter -->
-<p align="right">
-  <img src="https://komarev.com/ghpvc/?username=akshitharsola&label=Profile+Views&color=00D9FF&style=flat-square" alt="profile views" />
-</p>
+<!-- Quick social links + visitor counter in one row -->
+<div align="center">
+  <a href="https://www.linkedin.com/in/akshit-harsola-17b478216/">
+    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=flat-square&logo=linkedin&logoColor=white" />
+  </a>&nbsp;&nbsp;
+  <a href="mailto:harsolaakshit@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white" />
+  </a>&nbsp;&nbsp;
+  <img src="https://komarev.com/ghpvc/?username=akshitharsola&label=Profile+Views&color=00D9FF&style=flat-square" />
+</div>
+
+<br/>
 
 <!-- Typing Animation -->
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=00D9FF&center=true&vCenter=true&width=650&lines=Android+Engineer+%F0%9F%A4%96;AI+Agent+Developer+%F0%9F%A7%A0;Security+Enthusiast+%F0%9F%94%90;Full-Stack+Builder+%F0%9F%9A%80;Computer+Vision+Researcher+%F0%9F%91%81%EF%B8%8F" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=00D9FF&center=true&vCenter=true&width=700&lines=Android+%26+iOS+Engineer+%F0%9F%93%B1;AI+Agent+Developer+%F0%9F%A7%A0;Security+Architect+%F0%9F%94%90;Full-Stack+Builder+%F0%9F%9A%80;Computer+Vision+Researcher+%F0%9F%91%81%EF%B8%8F" alt="Typing SVG" />
 </div>
 
 <br/>
 
 ---
 
+<!-- Two-column: About Me + Code personality card -->
+<table>
+<tr>
+<td valign="top" width="55%">
+
 ## 👋 About Me
 
-- 🔐 Building **quantum-resistant** Android security apps — ML-KEM-768 + AES-256-GCM with hardware TEE backing
+- 🔐 Building **quantum-resistant** Android security apps — ML-KEM-768 + AES-256-GCM with hardware TEE
 - 🤖 Engineering **multi-agent AI** systems with local LLMs — Ollama, LLama2, Mistral, CodeLlama
 - 📱 Shipping production **Android + iOS** apps with Jetpack Compose & SwiftUI
-- 👁️ Applying **computer vision** — OpenCV, DBSCAN, Hough Transform, ML Kit — to real-world problems
+- 👁️ Applying **computer vision** — OpenCV, DBSCAN, Hough Transform, ML Kit
 - 🛡️ Obsessed with **offline-first, privacy-first** architecture and zero-permission mobile design
+
+</td>
+<td valign="top" width="45%">
+
+## ⚡ Current Focus
+
+```kotlin
+object Akshit {
+  val role    = "Android & iOS Engineer"
+  val mobile  = listOf("Kotlin", "Swift")
+  val ai      = listOf("Ollama", "LLama2", "Mistral")
+  val crypto  = "Post-Quantum (ML-KEM-768)"
+  val passion = "Privacy · Security · AI"
+  
+  fun contact() = "harsolaakshit@gmail.com"
+}
+```
+
+</td>
+</tr>
+</table>
 
 <br/>
 
@@ -37,19 +71,19 @@
 
 <img src="https://skillicons.dev/icons?i=kotlin,python,swift,ts,js,java&perline=6" />
 
-<br/>
+<br/><br/>
 
 **Mobile & Frontend**
 
-<img src="https://skillicons.dev/icons?i=androidstudio,react,xcode,gradle&perline=4" />
+<img src="https://skillicons.dev/icons?i=android,androidstudio,swift,react,gradle&perline=5" />
 
-<br/>
+<br/><br/>
 
 **Backend & Infra**
 
 <img src="https://skillicons.dev/icons?i=fastapi,sqlite,postgres,git,github&perline=5" />
 
-<br/>
+<br/><br/>
 
 **AI · ML · Tools**
 
@@ -64,7 +98,7 @@
 ## 🏆 GitHub Trophies
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=akshitharsola&theme=tokyonight&no-frame=true&column=7&margin-w=10&margin-h=10" alt="trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=akshitharsola&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=4" alt="trophies" />
 </div>
 
 <br/>
@@ -80,7 +114,7 @@
       <p>Quantum-resistant Android password manager with hardware-backed TEE encryption</p>
       <ul>
         <li>AES-256-GCM + ML-KEM-768 hybrid post-quantum crypto</li>
-        <li>Hardware Secure Element (TEE) key storage — keys never leave the chip</li>
+        <li>Hardware Secure Element (TEE) — keys never leave the chip</li>
         <li>Biometric auth + tamper detection + clipboard auto-clear</li>
         <li>Zero internet permissions — 100% offline</li>
       </ul>
@@ -120,7 +154,7 @@
       <p>
         <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
         <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Bluetooth_LE-0082FC?style=flat-square&logo=bluetooth&logoColor=white"/>
+        <img src="https://img.shields.io/badge/BLE-0082FC?style=flat-square&logo=bluetooth&logoColor=white"/>
         <img src="https://img.shields.io/badge/ML_Kit-4285F4?style=flat-square&logo=google&logoColor=white"/>
       </p>
     </td>
@@ -187,7 +221,7 @@
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=0A66C2)](https://linkedin.com/in/akshitharsola)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=0A66C2)](https://www.linkedin.com/in/akshit-harsola-17b478216/)
 [![Email](https://img.shields.io/badge/Email-0D1117?style=for-the-badge&logo=gmail&logoColor=EA4335)](mailto:harsolaakshit@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=white)](https://github.com/akshitharsola)
 
