@@ -1,16 +1,16 @@
-<!-- HEADER WAVE -->
+<!-- HEADER -->
 <div align="center">
-  <img width="100%" src="./header.svg" />
+  <img width="100%" src="./header.png" alt="Akshit Harsola" />
 </div>
 
 <!-- PROFILE VIEWS -->
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=akshitharsola&color=0A66C2&style=for-the-badge&label=PROFILE+VIEWS" />
+  <img src="https://komarev.com/ghpvc/?username=akshitharsola&color=764ba2&style=for-the-badge&label=PROFILE+VIEWS" />
 </p>
 
-<!-- TYPING SVG -->
+<!-- TYPING ANIMATION -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=58A6FF&center=true&vCenter=true&width=700&lines=Android+%26+iOS+Engineer+%F0%9F%93%B1;Multi-Agent+AI+Developer+%F0%9F%A7%A0;Security+Architect+%F0%9F%94%90;Full-Stack+Builder+%F0%9F%9A%80;Computer+Vision+Researcher+%F0%9F%91%81%EF%B8%8F" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=764ba2&center=true&vCenter=true&width=700&lines=Android+%26+iOS+Engineer+%F0%9F%93%B1;Multi-Agent+AI+Developer+%F0%9F%A7%A0;Security+Architect+%F0%9F%94%90;Full-Stack+Builder+%F0%9F%9A%80;Computer+Vision+Researcher+%F0%9F%91%81%EF%B8%8F" alt="Typing SVG" />
 </p>
 
 <br/>
@@ -19,13 +19,28 @@
 
 ## 👋 About Me
 
+<table>
+<tr>
+<td align="center" width="28%">
+  <img src="./profile.jpg" width="180" alt="Akshit Harsola" />
+  <br/><br/>
+  <strong>Akshit Harsola</strong>
+  <br/>
+  <em>Android &amp; iOS Engineer</em>
+</td>
+<td valign="top" width="72%">
+
 | | |
 |:--|:--|
-| 🔐 **Security** | Quantum-resistant Android apps — ML-KEM-768 + AES-256-GCM with hardware TEE |
+| 🔐 **Security** | Quantum-resistant Android — ML-KEM-768 + AES-256-GCM with hardware TEE |
 | 🤖 **AI Agents** | Multi-agent systems with local LLMs — Ollama, LLama2, Mistral, CodeLlama |
 | 📱 **Mobile** | Production Android (Jetpack Compose) + iOS (SwiftUI) apps |
 | 👁️ **Vision** | Computer vision — OpenCV, DBSCAN, Hough Transform, ML Kit |
 | 🛡️ **Philosophy** | Offline-first · Privacy-first · Zero internet permissions |
+
+</td>
+</tr>
+</table>
 
 <br/>
 
@@ -192,6 +207,8 @@
 
 ---
 
+## 🔗 Let's Connect
+
 <p align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/akshit-harsola-17b478216/)
@@ -200,9 +217,11 @@
 
 </p>
 
-<!-- FOOTER WAVE -->
+<br/>
+
+<!-- FOOTER -->
 <div align="center">
-  <img width="100%" src="./footer.svg" />
+  <img width="100%" src="./footer.png" alt="footer" />
 </div>
 
 <div align="center">
