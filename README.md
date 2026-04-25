@@ -1,6 +1,6 @@
 <!-- HEADER WAVE -->
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Akshit%20Harsola&fontSize=52&fontColor=fff&fontAlignY=36&desc=Android%20%26%20iOS%20%E2%80%A2%20AI%20Agents%20%E2%80%A2%20Security%20Architect&descAlignY=56&descSize=18" />
+  <img width="100%" src="./header.svg" />
 </div>
 
 <!-- PROFILE VIEWS -->
@@ -202,7 +202,7 @@
 
 <!-- FOOTER WAVE -->
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" />
+  <img width="100%" src="./footer.svg" />
 </div>
 
 <div align="center">
