@@ -101,7 +101,7 @@
 <tr>
 <td width="50%">
 
-### 🦾 [Autonomous Agricultural Robotics] (In Progress)
+### 🦾 Autonomous Agricultural Robotics (In Progress)
 > Intelligent Robotics Major Project · University of Galway
 
 - Autonomous strawberry harvesting robot with **multi-sensor fusion** (LiDAR, IMU, camera, GNSS-RTK)
