@@ -10,7 +10,7 @@
 
 <!-- TYPING ANIMATION -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=764ba2&center=true&vCenter=true&width=700&lines=Android+%26+iOS+Engineer+%F0%9F%93%B1;Multi-Agent+AI+Developer+%F0%9F%A7%A0;Security+Architect+%F0%9F%94%90;Full-Stack+Builder+%F0%9F%9A%80;Computer+Vision+Researcher+%F0%9F%91%81%EF%B8%8F" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=764ba2&center=true&vCenter=true&width=750&lines=ML+Engineer+%26+Robotics+Researcher+%F0%9F%A4%96;Computer+Vision+%26+Sensor+Fusion+%F0%9F%91%81%EF%B8%8F;Autonomous+Systems+%7C+ROS2+%7C+SLAM+%F0%9F%9A%97;3x+Published+Researcher+%F0%9F%93%9A;Security+%26+AI+Agent+Builder+%F0%9F%94%90" alt="Typing SVG" />
 </p>
 
 <br/>
@@ -21,22 +21,22 @@
 
 <table>
 <tr>
-<td align="center" width="28%">
-  <img src="./profile.jpg" width="180" alt="Akshit Harsola" />
+<td align="center" width="26%">
+  <img src="./profile.jpg" width="175" alt="Akshit Harsola" />
   <br/><br/>
-  <strong>Akshit Harsola</strong>
-  <br/>
-  <em>Android &amp; iOS Engineer</em>
+  <strong>Akshit Harsola</strong><br/>
+  <em>ML · Robotics · CV</em><br/>
+  <em>University of Galway 🇮🇪</em>
 </td>
-<td valign="top" width="72%">
+<td valign="top" width="74%">
 
 | | |
 |:--|:--|
-| 🔐 **Security** | Quantum-resistant Android — ML-KEM-768 + AES-256-GCM with hardware TEE |
-| 🤖 **AI Agents** | Multi-agent systems with local LLMs — Ollama, LLama2, Mistral, CodeLlama |
-| 📱 **Mobile** | Production Android (Jetpack Compose) + iOS (SwiftUI) apps |
-| 👁️ **Vision** | Computer vision — OpenCV, DBSCAN, Hough Transform, ML Kit |
-| 🛡️ **Philosophy** | Offline-first · Privacy-first · Zero internet permissions |
+| 🤖 **Robotics** | Autonomous systems — ROS2, SLAM, Kalman filtering, GNSS-RTK, LiDAR/IMU/camera fusion |
+| 👁️ **CV & ML** | CNN architectures, TensorFlow, PyTorch — production pipelines & embedded vision |
+| 📚 **Research** | 3 published papers across computer vision, distributed systems & computational biology |
+| 🔐 **Security** | Quantum-resistant Android/iOS apps — ML-KEM-768, AES-256-GCM, biometric auth |
+| 🧠 **AI Agents** | Multi-agent systems with local LLMs — Ollama, LLama2, Mistral, CodeLlama |
 
 </td>
 </tr>
@@ -52,25 +52,25 @@
 
 **Languages**
 
-<img src="https://skillicons.dev/icons?i=kotlin,python,swift,ts,js,java" />
+<img src="https://skillicons.dev/icons?i=python,cpp,kotlin,swift,ts,js" />
+
+<br/><br/>
+
+**ML · Robotics · Vision**
+
+<img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv,raspberrypi,arduino" />
+
+<br/><br/>
+
+**Backend · Infra · Tools**
+
+<img src="https://skillicons.dev/icons?i=fastapi,docker,git,github,linux" />
 
 <br/><br/>
 
 **Mobile & Frontend**
 
-<img src="https://skillicons.dev/icons?i=android,androidstudio,swift,react,gradle" />
-
-<br/><br/>
-
-**Backend & Infra**
-
-<img src="https://skillicons.dev/icons?i=fastapi,sqlite,postgres,git,github" />
-
-<br/><br/>
-
-**AI · ML · Tools**
-
-<img src="https://skillicons.dev/icons?i=opencv,tensorflow,selenium,vscode,figma" />
+<img src="https://skillicons.dev/icons?i=androidstudio,swift,react,gradle" />
 
 </div>
 
@@ -88,7 +88,7 @@
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=akshitharsola&theme=github_dark" />
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=akshitharsola&theme=github_dark" />
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=akshitharsola&theme=github_dark" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=akshitharsola&theme=github_dark&utcOffset=5.5" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=akshitharsola&theme=github_dark&utcOffset=1" />
 </div>
 
 <br/>
@@ -101,11 +101,45 @@
 <tr>
 <td width="50%">
 
+### 🦾 Autonomous Agricultural Robotics
+> Intelligent Robotics Major Project · University of Galway
+
+- Autonomous strawberry harvesting robot with **multi-sensor fusion** (LiDAR, IMU, camera, GNSS-RTK)
+- 50+ sensor readings/second · **95% localization accuracy**
+- ROS2 + Kalman filtering with RTK-GPS — position drift **< 2cm** over 100m
+- Reduced manual intervention by **70%** in field trials
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=flat)
+![ROS2](https://img.shields.io/badge/ROS2-22314E?logo=ros&logoColor=white&style=flat)
+![SLAM](https://img.shields.io/badge/SLAM-FF6B35?style=flat)
+![LiDAR](https://img.shields.io/badge/LiDAR-00B4D8?style=flat)
+
+</td>
+<td width="50%">
+
+### 👁️ AutoVision — Automated Object Annotation
+> Production CV pipeline · 90% detection accuracy
+
+- Reduced annotation time by **60%** (5h → 2h per 100 images)
+- Data augmentation pipeline generating **2,000+ synthetic samples**
+- **15% robustness improvement** across diverse lighting conditions
+- False positives reduced from 18% to 9%
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=flat)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white&style=flat)
+![CNN](https://img.shields.io/badge/CNN-FF6B6B?style=flat)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white&style=flat)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
 ### 🔐 [Secure Vault](https://github.com/akshitharsola/Secure-Vault)
 > Quantum-resistant Android password manager
 
 - **AES-256-GCM + ML-KEM-768** hybrid post-quantum crypto
-- Hardware **TEE/Secure Element** — keys never leave the chip
+- Hardware TEE/Secure Element — keys never leave the chip
 - Biometric auth · tamper detection · clipboard auto-clear
 - **Zero internet** permissions — 100% offline
 
@@ -131,40 +165,19 @@
 
 </td>
 </tr>
-<tr>
-<td width="50%">
-
-### 🎓 [SecureAttend](https://github.com/akshitharsola/SecureAttend-Backend)
-> Triple-factor anti-proxy attendance system
-
-- **QR + Face Recognition + BLE** — all three required
-- Cryptographic session QRs with JWT auth
-- Role-based: admin · faculty · student
-- FastAPI + SQLAlchemy + Alembic
-
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=flat)
-![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white&style=flat)
-![BLE](https://img.shields.io/badge/BLE-0082FC?logo=bluetooth&logoColor=white&style=flat)
-![ML_Kit](https://img.shields.io/badge/ML_Kit-4285F4?logo=google&logoColor=white&style=flat)
-
-</td>
-<td width="50%">
-
-### 🅿️ Parking Spot Detection
-> Computer vision pipeline for real-time parking analysis
-
-- **DBSCAN** clustering + **Hough Transform** detection
-- Template Matching under varied lighting/occlusion
-- OpenCV + NumPy real-time pipeline
-- Robust to dynamic camera angles
-
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=flat)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white&style=flat)
-![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white&style=flat)
-
-</td>
-</tr>
 </table>
+
+<br/>
+
+---
+
+## 📰 Research Publications
+
+| Year | Paper | Journal |
+|:--|:--|:--|
+| Apr 2025 | Micro-Expression Recognition for Lie Detection Using Image Processing | Int. Journal of Science, Engineering & Technology |
+| Feb 2024 | Integrating Blockchain and 5G Technologies for Enhanced Edge Computing | Int. Journal of Recent Advances in Multidisciplinary Topics |
+| Jan 2024 | Utilizing AlphaFold Predictions to Understand Protein Function and Dynamics | Int. Research Journal of Modernization in Engineering Technology |
 
 <br/>
 
@@ -213,6 +226,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/akshit-harsola-17b478216/)
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:harsolaakshit@gmail.com)
+[![ORCID](https://img.shields.io/badge/ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0009-0002-6243-5192)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/akshitharsola)
 
 </p>
