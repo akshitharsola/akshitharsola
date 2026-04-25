@@ -88,7 +88,6 @@
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=akshitharsola&theme=github_dark" />
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=akshitharsola&theme=github_dark" />
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=akshitharsola&theme=github_dark" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=akshitharsola&theme=github_dark&utcOffset=1" />
 </div>
 
 <br/>
@@ -118,7 +117,7 @@
 <td width="50%">
 
 ### 👁️ [AutoVision — Automated Object Annotation](https://github.com/akshitharsola/AutomationIMG)
-> Production CV pipeline · 90% detection accuracy
+> Automated object annotation pipeline — Python · OpenCV · CNN · 60% annotation time reduction
 
 - Reduced annotation time by **60%** (5h → 2h per 100 images)
 - Data augmentation pipeline generating **2,000+ synthetic samples**
