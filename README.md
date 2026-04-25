@@ -1,63 +1,31 @@
-<!-- Header Wave -->
+<!-- HEADER WAVE -->
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=Akshit%20Harsola&fontSize=52&fontColor=fff&animation=twinkling&fontAlignY=38&desc=Android%20%26%20iOS%20Engineer%20%E2%80%A2%20AI%20Agents%20%E2%80%A2%20Security%20Architect&descAlignY=58&descSize=20" />
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Akshit%20Harsola&fontSize=52&fontColor=fff&fontAlignY=36&desc=Android%20%26%20iOS%20%E2%80%A2%20AI%20Agents%20%E2%80%A2%20Security%20Architect&descAlignY=56&descSize=18" />
 </div>
 
-<!-- Quick social links + visitor counter in one row -->
-<div align="center">
-  <a href="https://www.linkedin.com/in/akshit-harsola-17b478216/">
-    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=flat-square&logo=linkedin&logoColor=white" />
-  </a>&nbsp;&nbsp;
-  <a href="mailto:harsolaakshit@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white" />
-  </a>&nbsp;&nbsp;
-  <img src="https://komarev.com/ghpvc/?username=akshitharsola&label=Profile+Views&color=00D9FF&style=flat-square" />
-</div>
+<!-- PROFILE VIEWS -->
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=akshitharsola&color=0A66C2&style=for-the-badge&label=PROFILE+VIEWS" />
+</p>
 
-<br/>
-
-<!-- Typing Animation -->
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=00D9FF&center=true&vCenter=true&width=700&lines=Android+%26+iOS+Engineer+%F0%9F%93%B1;AI+Agent+Developer+%F0%9F%A7%A0;Security+Architect+%F0%9F%94%90;Full-Stack+Builder+%F0%9F%9A%80;Computer+Vision+Researcher+%F0%9F%91%81%EF%B8%8F" alt="Typing SVG" />
-</div>
+<!-- TYPING SVG -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=58A6FF&center=true&vCenter=true&width=700&lines=Android+%26+iOS+Engineer+%F0%9F%93%B1;Multi-Agent+AI+Developer+%F0%9F%A7%A0;Security+Architect+%F0%9F%94%90;Full-Stack+Builder+%F0%9F%9A%80;Computer+Vision+Researcher+%F0%9F%91%81%EF%B8%8F" alt="Typing SVG" />
+</p>
 
 <br/>
 
 ---
 
-<!-- Two-column: About Me + Code personality card -->
-<table>
-<tr>
-<td valign="top" width="55%">
-
 ## 👋 About Me
 
-- 🔐 Building **quantum-resistant** Android security apps — ML-KEM-768 + AES-256-GCM with hardware TEE
-- 🤖 Engineering **multi-agent AI** systems with local LLMs — Ollama, LLama2, Mistral, CodeLlama
-- 📱 Shipping production **Android + iOS** apps with Jetpack Compose & SwiftUI
-- 👁️ Applying **computer vision** — OpenCV, DBSCAN, Hough Transform, ML Kit
-- 🛡️ Obsessed with **offline-first, privacy-first** architecture and zero-permission mobile design
-
-</td>
-<td valign="top" width="45%">
-
-## ⚡ Current Focus
-
-```kotlin
-object Akshit {
-  val role    = "Android & iOS Engineer"
-  val mobile  = listOf("Kotlin", "Swift")
-  val ai      = listOf("Ollama", "LLama2", "Mistral")
-  val crypto  = "Post-Quantum (ML-KEM-768)"
-  val passion = "Privacy · Security · AI"
-  
-  fun contact() = "harsolaakshit@gmail.com"
-}
-```
-
-</td>
-</tr>
-</table>
+| | |
+|:--|:--|
+| 🔐 **Security** | Quantum-resistant Android apps — ML-KEM-768 + AES-256-GCM with hardware TEE |
+| 🤖 **AI Agents** | Multi-agent systems with local LLMs — Ollama, LLama2, Mistral, CodeLlama |
+| 📱 **Mobile** | Production Android (Jetpack Compose) + iOS (SwiftUI) apps |
+| 👁️ **Vision** | Computer vision — OpenCV, DBSCAN, Hough Transform, ML Kit |
+| 🛡️ **Philosophy** | Offline-first · Privacy-first · Zero internet permissions |
 
 <br/>
 
@@ -69,25 +37,25 @@ object Akshit {
 
 **Languages**
 
-<img src="https://skillicons.dev/icons?i=kotlin,python,swift,ts,js,java&perline=6" />
+<img src="https://skillicons.dev/icons?i=kotlin,python,swift,ts,js,java" />
 
 <br/><br/>
 
 **Mobile & Frontend**
 
-<img src="https://skillicons.dev/icons?i=android,androidstudio,swift,react,gradle&perline=5" />
+<img src="https://skillicons.dev/icons?i=android,androidstudio,swift,react,gradle" />
 
 <br/><br/>
 
 **Backend & Infra**
 
-<img src="https://skillicons.dev/icons?i=fastapi,sqlite,postgres,git,github&perline=5" />
+<img src="https://skillicons.dev/icons?i=fastapi,sqlite,postgres,git,github" />
 
 <br/><br/>
 
 **AI · ML · Tools**
 
-<img src="https://skillicons.dev/icons?i=opencv,tensorflow,selenium,vscode,figma&perline=5" />
+<img src="https://skillicons.dev/icons?i=opencv,tensorflow,selenium,vscode,figma" />
 
 </div>
 
@@ -95,10 +63,17 @@ object Akshit {
 
 ---
 
-## 🏆 GitHub Trophies
+## 📊 Profile Summary
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=akshitharsola&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=4" alt="trophies" />
+  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=akshitharsola&theme=github_dark" />
+</div>
+
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=akshitharsola&theme=github_dark" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=akshitharsola&theme=github_dark" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=akshitharsola&theme=github_dark" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=akshitharsola&theme=github_dark&utcOffset=5.5" />
 </div>
 
 <br/>
@@ -108,106 +83,106 @@ object Akshit {
 ## 🚀 Featured Projects
 
 <table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🔐 <a href="https://github.com/akshitharsola/Secure-Vault">Secure Vault</a></h3>
-      <p>Quantum-resistant Android password manager with hardware-backed TEE encryption</p>
-      <ul>
-        <li>AES-256-GCM + ML-KEM-768 hybrid post-quantum crypto</li>
-        <li>Hardware Secure Element (TEE) — keys never leave the chip</li>
-        <li>Biometric auth + tamper detection + clipboard auto-clear</li>
-        <li>Zero internet permissions — 100% offline</li>
-      </ul>
-      <p>
-        <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Jetpack_Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white"/>
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🤖 <a href="https://github.com/akshitharsola/Samay">Samay</a></h3>
-      <p>Multi-Agent AI Session Manager — 6 evolving architectures for AI service automation</p>
-      <ul>
-        <li>Persistent sessions across Claude, Gemini, Perplexity</li>
-        <li>Anti-bot fingerprint spoofing + human-like interaction patterns</li>
-        <li>Chrome Extension Manifest V3 zero-cost architecture (v6)</li>
-        <li>Automated OTP handling via Gmail API</li>
-      </ul>
-      <p>
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-        <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
-        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
-        <img src="https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white"/>
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🎓 <a href="https://github.com/akshitharsola/SecureAttend-Backend">SecureAttend</a></h3>
-      <p>Triple-factor anti-proxy attendance system for educational institutions</p>
-      <ul>
-        <li>QR code + Face Recognition + Bluetooth proximity — all three required</li>
-        <li>Cryptographic session QR codes with JWT auth</li>
-        <li>Role-based access: admin · faculty · student</li>
-        <li>FastAPI + SQLAlchemy + Alembic migrations</li>
-      </ul>
-      <p>
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-        <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white"/>
-        <img src="https://img.shields.io/badge/BLE-0082FC?style=flat-square&logo=bluetooth&logoColor=white"/>
-        <img src="https://img.shields.io/badge/ML_Kit-4285F4?style=flat-square&logo=google&logoColor=white"/>
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🅿️ Parking Spot Detection</h3>
-      <p>Real-time computer vision pipeline for intelligent parking analysis</p>
-      <ul>
-        <li>DBSCAN clustering + Hough Transform for spot boundary detection</li>
-        <li>Template Matching under varied lighting and occlusion</li>
-        <li>OpenCV + NumPy real-time processing pipeline</li>
-        <li>Handles dynamic camera angles and environmental variance</li>
-      </ul>
-      <p>
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-        <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white"/>
-        <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white"/>
-      </p>
-    </td>
-  </tr>
+<tr>
+<td width="50%">
+
+### 🔐 [Secure Vault](https://github.com/akshitharsola/Secure-Vault)
+> Quantum-resistant Android password manager
+
+- **AES-256-GCM + ML-KEM-768** hybrid post-quantum crypto
+- Hardware **TEE/Secure Element** — keys never leave the chip
+- Biometric auth · tamper detection · clipboard auto-clear
+- **Zero internet** permissions — 100% offline
+
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white&style=flat)
+![Compose](https://img.shields.io/badge/Jetpack_Compose-4285F4?logo=jetpackcompose&logoColor=white&style=flat)
+![Android](https://img.shields.io/badge/Android-3DDC84?logo=android&logoColor=white&style=flat)
+
+</td>
+<td width="50%">
+
+### 🤖 [Samay](https://github.com/akshitharsola/Samay)
+> Multi-Agent AI Session Manager · 6 architectures
+
+- Persistent sessions: Claude · Gemini · Perplexity
+- Anti-bot fingerprint spoofing + human-like patterns
+- Chrome Extension **MV3** zero-cost architecture (v6)
+- Automated OTP via **Gmail API**
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=flat)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white&style=flat)
+![Swift](https://img.shields.io/badge/Swift-F05138?logo=swift&logoColor=white&style=flat)
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=flat)
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🎓 [SecureAttend](https://github.com/akshitharsola/SecureAttend-Backend)
+> Triple-factor anti-proxy attendance system
+
+- **QR + Face Recognition + BLE** — all three required
+- Cryptographic session QRs with JWT auth
+- Role-based: admin · faculty · student
+- FastAPI + SQLAlchemy + Alembic
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=flat)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white&style=flat)
+![BLE](https://img.shields.io/badge/BLE-0082FC?logo=bluetooth&logoColor=white&style=flat)
+![ML_Kit](https://img.shields.io/badge/ML_Kit-4285F4?logo=google&logoColor=white&style=flat)
+
+</td>
+<td width="50%">
+
+### 🅿️ Parking Spot Detection
+> Computer vision pipeline for real-time parking analysis
+
+- **DBSCAN** clustering + **Hough Transform** detection
+- Template Matching under varied lighting/occlusion
+- OpenCV + NumPy real-time pipeline
+- Robust to dynamic camera angles
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=flat)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white&style=flat)
+![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white&style=flat)
+
+</td>
+</tr>
 </table>
 
 <br/>
 
 ---
 
-## 📊 GitHub Stats
+## 📈 GitHub Stats
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=akshitharsola&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=akshitharsola&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=akshitharsola&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=akshitharsola&layout=compact&langs_count=8&theme=github_dark&hide_border=true" />
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=akshitharsola&theme=tokyonight&hide_border=true&background=0D1117&ring=00D9FF&fire=00D9FF&currStreakLabel=00D9FF" alt="streak stats" />
-</div>
-
-<br/>
-
----
-
-## 📈 Activity Graph
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=akshitharsola&theme=tokyo-night&hide_border=true&area=true&color=00D9FF&line=00D9FF&point=ffffff" alt="activity graph" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=akshitharsola&theme=github-dark-blue&hide_border=true" />
 </div>
 
 <br/>
 
 ---
 
-## 🐍 Watch the Snake Eat My Contributions
+## 📉 Activity Graph
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=akshitharsola&theme=github-compact&hide_border=true&area=true" />
+</div>
+
+<br/>
+
+---
+
+## 🐍 Contribution Snake
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/akshitharsola/akshitharsola/output/github-contribution-grid-snake-dark.svg" alt="contribution snake" />
@@ -217,19 +192,19 @@ object Akshit {
 
 ---
 
-## 🔗 Let's Connect
+<p align="center">
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/akshit-harsola-17b478216/)
+[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:harsolaakshit@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/akshitharsola)
+
+</p>
+
+<!-- FOOTER WAVE -->
 <div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=0A66C2)](https://www.linkedin.com/in/akshit-harsola-17b478216/)
-[![Email](https://img.shields.io/badge/Email-0D1117?style=for-the-badge&logo=gmail&logoColor=EA4335)](mailto:harsolaakshit@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=white)](https://github.com/akshitharsola)
-
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" />
 </div>
 
-<br/>
-
-<!-- Footer Wave -->
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" />
+  <sub>Made with ❤️ by <a href="https://github.com/akshitharsola">Akshit Harsola</a> &amp; <a href="https://claude.ai">Claude</a></sub>
 </div>
