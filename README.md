@@ -19,43 +19,29 @@
 
 ## 👋 About Me
 
-<table>
-<tr>
-<td align="center" width="26%">
-  <img src="./profile-circle.png" width="175" alt="Akshit Harsola" />
-  <br/><br/>
-  <strong>Akshit Harsola</strong><br/>
-  <em>ML · Robotics · CV</em><br/>
-  <em>University of Galway 🇮🇪</em>
-</td>
-<td valign="top" width="74%">
-
 ```
-akshitharsola@github
----------------------
-OS:              ML Engineer & Robotics Researcher
-Host:            University of Galway, Ireland
-Role:            Autonomous Systems · Computer Vision
-Kernel:          ROS2 · SLAM · Kalman Filtering
-Uptime:          3x Published Researcher
-
-Languages.ML:    PyTorch, TensorFlow, OpenCV
-Languages.Prog:  Python, C++, Kotlin, Swift, TS/JS
-Languages.Real:  English, Hindi
-
-Focus.Robotics:  GNSS-RTK, LiDAR/IMU/Camera Fusion
-Focus.Security:  ML-KEM-768, AES-256-GCM, Biometric Auth
-Focus.Agents:    Multi-agent systems, Local LLMs (Ollama)
-
-Contact.Email:   harsolaakshit@gmail.com
-Contact.LinkedIn: akshit-harsola
-Contact.ORCID:   0009-0002-6243-5192
-
++==+**##%*=.+*..==-:...---.====+:::::::.-++=+-   akshitharsola@github
++*++**##%%%:++. -=-... :-=.=++++-:----:.-++=+=   ---------------------
+=*++***####:=+..:-:---=+*= =++=+-:----:.-*****   OS: ................. ML Engineer & Robotics
+****#######-+#: -=-+++*++#==++++-----=:.-**+*+   Host: ............... University of Galway, IE
+#***######%-+#: -=**::.::=#=*++*-:----:.-*+=++   Kernel: .............. ROS2 / SLAM / Kalman Filter
+###*####%%%-+%:.-=: .-.--.:=**+*=:::--:.-**+++   Uptime: .............. 3x Published Researcher
+#%#*##%#%%%=+%-.---: ::--:*%%#+*=:---=-.-*****   
+####%%%%%%%==%-.-##%. -=-=@%%%*+=:---=-.-**#**   Languages.ML: ........ PyTorch, TensorFlow, OpenCV
+###*#####%%+=@=-+##%+-:==#%%%%**+:---=-.-**#**   Languages.Prog: ...... Python, C++, Kotlin, Swift
+#%%**######+:++*****#@++%####*#%+:---=-:-**#**   
+%%%#*#%%%#%- -*#+***#%%%###%%##%#--==+=--####*   Focus.Robotics: ...... GNSS-RTK, LiDAR/IMU/Camera Fusion
+%@%##+####+  +##**#*#**######**%%=--=+=-=*##**   Focus.Security: ...... ML-KEM-768, AES-256-GCM
+%%%##*###*.  =%#+#**##+###**%%+%#==--++==**###   Focus.Agents: ........ Multi-agent systems, Local LLMs
+%%%%##%%%:.-.-%%+*#*##+#####%#*%#++=--=--++***   
+#####%%%*  -=-##-=#***=*#####%%%%**+=--::+++*+   Contact.Email: ....... harsolaakshit@gmail.com
+****###%-:=+*#%+.=*+**=*#####**+*%*++==::+***+   Contact.LinkedIn: .... akshit-harsola
+...+--=*---=+*%- ::---==++++====+%**+++-:=****   Contact.ORCID: ....... 0009-0002-6243-5192
+==--=+**#::::==:. ...:=.---:-==*#+=+++=-:--:::   Contact.GitHub: ...... akshitharsola
+====+++++=:.::   ..:=+=::-====-=+++++=:..:.::.   
+::::......:.:. ....::--:::-------=-=:      ..    
+                          .... ... .... ....
 ```
-
-</td>
-</tr>
-</table>
 
 <br/>
 
