@@ -22,7 +22,7 @@
 <table>
 <tr>
 <td align="center" width="26%">
-  <img src="./profile.jpg" width="175" alt="Akshit Harsola" />
+  <img src="./profile-circle.png" width="175" alt="Akshit Harsola" />
   <br/><br/>
   <strong>Akshit Harsola</strong><br/>
   <em>ML · Robotics · CV</em><br/>
@@ -30,13 +30,28 @@
 </td>
 <td valign="top" width="74%">
 
-| | |
-|:--|:--|
-| 🤖 **Robotics** | Autonomous systems — ROS2, SLAM, Kalman filtering, GNSS-RTK, LiDAR/IMU/camera fusion |
-| 👁️ **CV & ML** | CNN architectures, TensorFlow, PyTorch — production pipelines & embedded vision |
-| 📚 **Research** | 3 published papers across computer vision, distributed systems & computational biology |
-| 🔐 **Security** | Quantum-resistant Android/iOS apps — ML-KEM-768, AES-256-GCM, biometric auth |
-| 🧠 **AI Agents** | Multi-agent systems with local LLMs — Ollama, LLama2, Mistral, CodeLlama |
+```
+akshitharsola@github
+---------------------
+OS:              ML Engineer & Robotics Researcher
+Host:            University of Galway, Ireland
+Role:            Autonomous Systems · Computer Vision
+Kernel:          ROS2 · SLAM · Kalman Filtering
+Uptime:          3x Published Researcher
+
+Languages.ML:    PyTorch, TensorFlow, OpenCV
+Languages.Prog:  Python, C++, Kotlin, Swift, TS/JS
+Languages.Real:  English, Hindi
+
+Focus.Robotics:  GNSS-RTK, LiDAR/IMU/Camera Fusion
+Focus.Security:  ML-KEM-768, AES-256-GCM, Biometric Auth
+Focus.Agents:    Multi-agent systems, Local LLMs (Ollama)
+
+Contact.Email:   harsolaakshit@gmail.com
+Contact.LinkedIn: akshit-harsola
+Contact.ORCID:   0009-0002-6243-5192
+
+```
 
 </td>
 </tr>
