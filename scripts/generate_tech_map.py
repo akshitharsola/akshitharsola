@@ -2,17 +2,20 @@
 """Generate a "which projects use this tech" list for the README Tech Stack
 section, and splice it into README.md between the TECH_MAP marker comments.
 
-Matches each declared skill against repos by primary `language` and by
-keyword search over each repo's name + description (topics are mostly
-unset on this account, so description text is the more reliable signal).
+Unlike a naive language/description match, this uses GitHub's code search
+API to look for real signal inside each repo (dependency manifests, config
+files) so frameworks/tools actually used but not mentioned in the repo
+description or captured by the primary `language` field still get credit.
 
-Requires env var GH_TOKEN (a token with public_repo read access is enough).
+Requires env var GH_TOKEN (a token with public_repo + code search access —
+a normal GITHUB_TOKEN in Actions is enough for public repos).
 """
 import os
 import sys
 import json
-import re
+import time
 import urllib.request
+import urllib.parse
 
 USERNAME = "akshitharsola"
 TOKEN = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
@@ -28,29 +31,6 @@ README_PATH = os.path.join(os.path.dirname(__file__), "..", "README.md")
 MARKER_START = "<!-- TECH_MAP:START -->"
 MARKER_END = "<!-- TECH_MAP:END -->"
 
-# name -> (display label, language match, keyword patterns to search in name+description)
-SKILLS = {
-    "python": ("Python", "Python", []),
-    "cpp": ("C++", "C++", []),
-    "kotlin": ("Kotlin", "Kotlin", []),
-    "swift": ("Swift", "Swift", []),
-    "ts": ("TypeScript", "TypeScript", []),
-    "js": ("JavaScript", "JavaScript", []),
-    "pytorch": ("PyTorch", None, [r"pytorch"]),
-    "tensorflow": ("TensorFlow", None, [r"tensorflow"]),
-    "opencv": ("OpenCV", None, [r"opencv"]),
-    "raspberrypi": ("Raspberry Pi", None, [r"raspberry\s*pi"]),
-    "arduino": ("Arduino", None, [r"arduino"]),
-    "fastapi": ("FastAPI", None, [r"fastapi"]),
-    "docker": ("Docker", None, [r"docker"]),
-    "git": ("Git", None, []),
-    "github": ("GitHub", None, []),
-    "linux": ("Linux", None, [r"\blinux\b"]),
-    "androidstudio": ("Android Studio", None, [r"android"]),
-    "react": ("React", None, [r"\breact\b"]),
-    "gradle": ("Gradle", None, [r"gradle"]),
-}
-
 
 def gh_get(path):
     url = path if path.startswith("http") else f"{API}{path}"
@@ -59,29 +39,52 @@ def gh_get(path):
         return json.load(resp)
 
 
-def fetch_repos():
+def code_search(query, retries=4):
+    """Run a GitHub code search query, return set of matching repo names.
+    Retries with backoff on rate limiting instead of silently swallowing
+    failures (a swallowed error would render as a false "not used")."""
+    q = urllib.parse.quote(f"{query} user:{USERNAME}")
+    url = f"{API}/search/code?q={q}&per_page=50"
+    for attempt in range(retries):
+        try:
+            return {item["repository"]["name"] for item in gh_get(url).get("items", [])}
+        except urllib.error.HTTPError as e:
+            if e.code in (403, 429) and attempt < retries - 1:
+                wait = int(e.headers.get("Retry-After", 15))
+                print(f"  rate limited on '{query}', waiting {wait}s...", file=sys.stderr)
+                time.sleep(wait)
+                continue
+            raise
+
+
+def fetch_owned_repos():
     repos = gh_get(f"/users/{USERNAME}/repos?per_page=100&type=owner")
-    return [r for r in repos if not r.get("fork")]
+    return {r["name"] for r in repos if not r.get("fork")}
 
 
-def build_tech_map(repos):
-    tech_map = {}
-    for key, (label, lang, patterns) in SKILLS.items():
-        matches = []
-        for repo in repos:
-            haystack = f"{repo['name']} {repo.get('description') or ''}".lower()
-            hit = False
-            if lang and repo.get("language") == lang:
-                hit = True
-            for pat in patterns:
-                if re.search(pat, haystack, re.IGNORECASE):
-                    hit = True
-                    break
-            if hit:
-                matches.append(repo["name"])
-        tech_map[key] = (label, sorted(set(matches)))
-    return tech_map
-
+# label -> list of code-search queries (results are unioned); language-based
+# skills fall back to the repo's primary `language` field instead of search.
+SKILL_QUERIES = {
+    "python": {"label": "Python", "language": "Python"},
+    "cpp": {"label": "C++", "language": "C++"},
+    "kotlin": {"label": "Kotlin", "language": "Kotlin"},
+    "swift": {"label": "Swift", "language": "Swift"},
+    "ts": {"label": "TypeScript", "language": "TypeScript"},
+    "js": {"label": "JavaScript", "language": "JavaScript"},
+    "pytorch": {"label": "PyTorch", "queries": ["torch in:file filename:requirements.txt"]},
+    "tensorflow": {"label": "TensorFlow", "queries": ["tensorflow in:file filename:requirements.txt"]},
+    "opencv": {"label": "OpenCV", "queries": ["opencv in:file filename:requirements.txt"]},
+    "raspberrypi": {"label": "Raspberry Pi", "queries": ["raspberry in:readme"]},
+    "arduino": {"label": "Arduino", "queries": ["arduino in:readme", "filename:*.ino"]},
+    "fastapi": {"label": "FastAPI", "queries": ["fastapi in:file filename:requirements.txt"]},
+    "docker": {"label": "Docker", "queries": ["filename:Dockerfile", "filename:docker-compose.yml"]},
+    "git": {"label": "Git", "queries": ["filename:.gitignore"]},
+    "github": {"label": "GitHub", "queries": ["path:.github/workflows"]},
+    "linux": {"label": "Linux", "queries": ["filename:requirements.txt", "filename:build.gradle.kts", "filename:Dockerfile"]},
+    "androidstudio": {"label": "Android Studio", "language": "Kotlin", "queries": ["filename:build.gradle.kts", "filename:AndroidManifest.xml"]},
+    "react": {"label": "React", "queries": ["react in:file filename:package.json"]},
+    "gradle": {"label": "Gradle", "queries": ["filename:build.gradle.kts", "filename:build.gradle"]},
+}
 
 ROWS = [
     ("Languages", ["python", "cpp", "kotlin", "swift", "ts", "js"]),
@@ -89,6 +92,24 @@ ROWS = [
     ("Backend · Infra · Tools", ["fastapi", "docker", "git", "github", "linux"]),
     ("Mobile & Frontend", ["androidstudio", "swift", "react", "gradle"]),
 ]
+
+
+def build_tech_map(owned_repos, repo_languages):
+    tech_map = {}
+    for key, spec in SKILL_QUERIES.items():
+        matches = set()
+
+        lang = spec.get("language")
+        if lang:
+            matches |= {name for name, l in repo_languages.items() if l == lang}
+
+        for q in spec.get("queries", []):
+            matches |= code_search(q)
+            time.sleep(2)  # code search is rate-limited to ~10 req/min
+
+        matches &= owned_repos
+        tech_map[key] = (spec["label"], sorted(matches))
+    return tech_map
 
 
 def render_markdown(tech_map):
@@ -117,6 +138,7 @@ def splice_into_readme(block):
     if MARKER_START not in content or MARKER_END not in content:
         sys.exit("TECH_MAP markers not found in README.md — add them manually first")
 
+    import re
     pattern = re.compile(re.escape(MARKER_START) + r".*?" + re.escape(MARKER_END), re.DOTALL)
     content = pattern.sub(block, content)
 
@@ -128,8 +150,12 @@ def main():
     if not TOKEN:
         sys.exit("GH_TOKEN/GITHUB_TOKEN env var required")
 
-    repos = fetch_repos()
-    tech_map = build_tech_map(repos)
+    owned_repos_list = gh_get(f"/users/{USERNAME}/repos?per_page=100&type=owner")
+    owned_repos_list = [r for r in owned_repos_list if not r.get("fork")]
+    owned_repos = {r["name"] for r in owned_repos_list}
+    repo_languages = {r["name"]: r.get("language") for r in owned_repos_list}
+
+    tech_map = build_tech_map(owned_repos, repo_languages)
     block = render_markdown(tech_map)
     splice_into_readme(block)
     print("Updated README.md Tech Stack project map")
