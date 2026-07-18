@@ -9,7 +9,6 @@ on:
       - main
     paths:
       - "scripts/generate_stats.py"
-      - "scripts/generate_tech_map.py"
 
 permissions:
   contents: write
@@ -29,15 +28,10 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/generate_stats.py
 
-      - name: Generate tech stack project map
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 scripts/generate_tech_map.py
-
       - name: Commit updated assets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/github-stats.svg assets/top-langs.svg README.md
-          git diff --cached --quiet || git commit -m "chore: update GitHub stats and tech stack project map"
+          git add assets/github-stats.svg assets/top-langs.svg
+          git diff --cached --quiet || git commit -m "chore: update GitHub stats SVGs"
           git push
