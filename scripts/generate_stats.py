@@ -23,7 +23,8 @@ HEADERS = {
 
 
 def gh_get(path):
-    req = urllib.request.Request(f"{API}{path}", headers=HEADERS)
+    url = path if path.startswith("http") else f"{API}{path}"
+    req = urllib.request.Request(url, headers=HEADERS)
     with urllib.request.urlopen(req) as resp:
         return json.load(resp)
 
