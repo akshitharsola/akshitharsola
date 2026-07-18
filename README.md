@@ -71,6 +71,47 @@
 
 </div>
 
+<!-- TECH_MAP:START -->
+
+<details>
+<summary><b>📂 Projects by technology</b></summary>
+
+**Languages**
+
+- **Python**: [AutomationIMG](https://github.com/akshitharsola/AutomationIMG), [LaTeX-Automatic-Parsing-Python](https://github.com/akshitharsola/LaTeX-Automatic-Parsing-Python), [Samay](https://github.com/akshitharsola/Samay), [SecureAttend-Backend](https://github.com/akshitharsola/SecureAttend-Backend), [akshitharsola](https://github.com/akshitharsola/akshitharsola)
+- **C++**: _no public repos yet_
+- **Kotlin**: [MobileAI](https://github.com/akshitharsola/MobileAI), [QuickPDF](https://github.com/akshitharsola/QuickPDF), [Secure-Vault](https://github.com/akshitharsola/Secure-Vault), [SecureAttend-Frontend-Android](https://github.com/akshitharsola/SecureAttend-Frontend-Android), [dual-clock-widget](https://github.com/akshitharsola/dual-clock-widget)
+- **Swift**: [Calculator-Layout-iOS](https://github.com/akshitharsola/Calculator-Layout-iOS), [ImageClassification](https://github.com/akshitharsola/ImageClassification), [Magic8Ball_iOS](https://github.com/akshitharsola/Magic8Ball_iOS), [Xylophone](https://github.com/akshitharsola/Xylophone)
+- **TypeScript**: [overleaf-automation](https://github.com/akshitharsola/overleaf-automation)
+- **JavaScript**: _no public repos yet_
+
+**ML · Robotics · Vision**
+
+- **PyTorch**: _no public repos yet_
+- **TensorFlow**: _no public repos yet_
+- **OpenCV**: [AutomationIMG](https://github.com/akshitharsola/AutomationIMG), [Classical-Parking-Spot-Detection-and-Occupancy-Classification-Using-Image-Processing](https://github.com/akshitharsola/Classical-Parking-Spot-Detection-and-Occupancy-Classification-Using-Image-Processing)
+- **Raspberry Pi**: [Classical-Parking-Spot-Detection-and-Occupancy-Classification-Using-Image-Processing](https://github.com/akshitharsola/Classical-Parking-Spot-Detection-and-Occupancy-Classification-Using-Image-Processing)
+- **Arduino**: _no public repos yet_
+
+**Backend · Infra · Tools**
+
+- **FastAPI**: [Samay](https://github.com/akshitharsola/Samay), [SecureAttend-Backend](https://github.com/akshitharsola/SecureAttend-Backend)
+- **Docker**: _no public repos yet_
+- **Git**: _no public repos yet_
+- **GitHub**: _no public repos yet_
+- **Linux**: _no public repos yet_
+
+**Mobile & Frontend**
+
+- **Android Studio**: [MobileAI](https://github.com/akshitharsola/MobileAI), [QuickPDF](https://github.com/akshitharsola/QuickPDF), [Secure-Vault](https://github.com/akshitharsola/Secure-Vault), [SecureAttend-Backend](https://github.com/akshitharsola/SecureAttend-Backend), [SecureAttend-Frontend-Android](https://github.com/akshitharsola/SecureAttend-Frontend-Android)
+- **Swift**: [Calculator-Layout-iOS](https://github.com/akshitharsola/Calculator-Layout-iOS), [ImageClassification](https://github.com/akshitharsola/ImageClassification), [Magic8Ball_iOS](https://github.com/akshitharsola/Magic8Ball_iOS), [Xylophone](https://github.com/akshitharsola/Xylophone)
+- **React**: [Samay](https://github.com/akshitharsola/Samay), [overleaf-automation](https://github.com/akshitharsola/overleaf-automation)
+- **Gradle**: _no public repos yet_
+
+</details>
+
+<!-- TECH_MAP:END -->
+
 <br/>
 
 ---
