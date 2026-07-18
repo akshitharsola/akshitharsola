@@ -33,25 +33,41 @@
 
 **Languages**
 
-<img src="https://skillicons.dev/icons?i=python,cpp,kotlin,swift,ts,js" />
+<img src="https://skillicons.dev/icons?i=python" title="Python" alt="Python" />
+<img src="https://skillicons.dev/icons?i=cpp" title="C++" alt="C++" />
+<img src="https://skillicons.dev/icons?i=kotlin" title="Kotlin" alt="Kotlin" />
+<img src="https://skillicons.dev/icons?i=swift" title="Swift" alt="Swift" />
+<img src="https://skillicons.dev/icons?i=ts" title="TypeScript" alt="TypeScript" />
+<img src="https://skillicons.dev/icons?i=js" title="JavaScript" alt="JavaScript" />
 
 <br/><br/>
 
 **ML · Robotics · Vision**
 
-<img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv,raspberrypi,arduino" />
+<img src="https://skillicons.dev/icons?i=pytorch" title="PyTorch" alt="PyTorch" />
+<img src="https://skillicons.dev/icons?i=tensorflow" title="TensorFlow" alt="TensorFlow" />
+<img src="https://skillicons.dev/icons?i=opencv" title="OpenCV" alt="OpenCV" />
+<img src="https://skillicons.dev/icons?i=raspberrypi" title="Raspberry Pi" alt="Raspberry Pi" />
+<img src="https://skillicons.dev/icons?i=arduino" title="Arduino" alt="Arduino" />
 
 <br/><br/>
 
 **Backend · Infra · Tools**
 
-<img src="https://skillicons.dev/icons?i=fastapi,docker,git,github,linux" />
+<img src="https://skillicons.dev/icons?i=fastapi" title="FastAPI" alt="FastAPI" />
+<img src="https://skillicons.dev/icons?i=docker" title="Docker" alt="Docker" />
+<img src="https://skillicons.dev/icons?i=git" title="Git" alt="Git" />
+<img src="https://skillicons.dev/icons?i=github" title="GitHub" alt="GitHub" />
+<img src="https://skillicons.dev/icons?i=linux" title="Linux" alt="Linux" />
 
 <br/><br/>
 
 **Mobile & Frontend**
 
-<img src="https://skillicons.dev/icons?i=androidstudio,swift,react,gradle" />
+<img src="https://skillicons.dev/icons?i=androidstudio" title="Android Studio" alt="Android Studio" />
+<img src="https://skillicons.dev/icons?i=swift" title="Swift" alt="Swift" />
+<img src="https://skillicons.dev/icons?i=react" title="React" alt="React" />
+<img src="https://skillicons.dev/icons?i=gradle" title="Gradle" alt="Gradle" />
 
 </div>
 
