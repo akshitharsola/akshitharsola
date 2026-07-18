@@ -166,8 +166,8 @@
 ## 📈 GitHub Stats
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=akshitharsola&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=akshitharsola&layout=compact&langs_count=8&theme=github_dark&hide_border=true" />
+  <img height="180em" src="assets/github-stats.svg" />
+  <img height="180em" src="assets/top-langs.svg" />
 </div>
 
 <br/>
