@@ -52,12 +52,17 @@
 
 <br/><br/>
 
-**Backend · Infra · Tools**
+**Backend · Databases**
 
 <img src="https://skillicons.dev/icons?i=fastapi" title="FastAPI" alt="FastAPI" />
 <img src="https://skillicons.dev/icons?i=postgres" title="PostgreSQL" alt="PostgreSQL" />
 <img src="https://skillicons.dev/icons?i=mysql" title="MySQL" alt="MySQL" />
 <img src="https://skillicons.dev/icons?i=docker" title="Docker" alt="Docker" />
+
+<br/><br/>
+
+**Cloud · DevOps**
+
 <img src="https://skillicons.dev/icons?i=aws" title="AWS" alt="AWS" />
 <img src="https://skillicons.dev/icons?i=gcp" title="Google Cloud Platform" alt="GCP" />
 <img src="https://skillicons.dev/icons?i=azure" title="Microsoft Azure" alt="Azure" />
@@ -83,7 +88,7 @@
 ## 📊 Profile Summary
 
 <div align="center">
-  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=akshitharsola&theme=github_dark" />
+  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=akshitharsola&theme=github_dark&name=akshitharsola" />
 </div>
 
 <div align="center">

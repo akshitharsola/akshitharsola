@@ -80,9 +80,9 @@
       "file_type": "rationale",
       "source_file": "/Users/akshitharsola/Documents/TEMP/GitHub/scripts/generate_tech_map.py",
       "source_location": "L43",
-      "id": "generate_tech_map_rationale_43",
       "community": 0,
-      "norm_label": "run a github code search query, return set of matching repo names.     retries w"
+      "norm_label": "run a github code search query, return set of matching repo names.     retries w",
+      "id": "generate_tech_map_rationale_43"
     },
     {
       "label": "compose_about_me.py",
