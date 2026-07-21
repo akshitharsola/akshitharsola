@@ -55,6 +55,7 @@
 **Backend · Infra · Tools**
 
 <img src="https://skillicons.dev/icons?i=fastapi" title="FastAPI" alt="FastAPI" />
+<img src="https://skillicons.dev/icons?i=postgres" title="PostgreSQL" alt="PostgreSQL" />
 <img src="https://skillicons.dev/icons?i=docker" title="Docker" alt="Docker" />
 <img src="https://skillicons.dev/icons?i=git" title="Git" alt="Git" />
 <img src="https://skillicons.dev/icons?i=github" title="GitHub" alt="GitHub" />
