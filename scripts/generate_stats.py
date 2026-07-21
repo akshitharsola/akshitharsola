@@ -9,6 +9,7 @@ Requires env var GH_TOKEN (a token with public_repo read access is enough).
 import os
 import sys
 import json
+import datetime
 import urllib.request
 
 USERNAME = "akshitharsola"
@@ -78,6 +79,74 @@ def fetch_stats():
         "issues": data["issues"]["totalCount"],
         "repos": data["repositories"]["totalCount"],
         "followers": user.get("followers", 0),
+    }
+
+
+def fetch_contribution_calendar():
+    query = """
+    query($login: String!) {
+      user(login: $login) {
+        contributionsCollection {
+          contributionCalendar {
+            totalContributions
+            weeks {
+              contributionDays { date contributionCount }
+            }
+          }
+        }
+      }
+    }
+    """
+    data = gh_graphql(query, {"login": USERNAME})["data"]["user"]
+    calendar = data["contributionsCollection"]["contributionCalendar"]
+    days = [
+        (d["date"], d["contributionCount"])
+        for week in calendar["weeks"]
+        for d in week["contributionDays"]
+    ]
+    days.sort(key=lambda dc: dc[0])
+    return calendar["totalContributions"], days
+
+
+def compute_streaks(days):
+    today = datetime.date.today().isoformat()
+    longest = 0
+    longest_run = (None, None)
+    run_start = None
+    run_len = 0
+
+    for date, count in days:
+        if count > 0:
+            if run_len == 0:
+                run_start = date
+            run_len += 1
+            if run_len > longest:
+                longest = run_len
+                longest_run = (run_start, date)
+        else:
+            run_len = 0
+
+    # Current streak: walk backwards from the most recent day, allowing
+    # today to be contribution-free (day not over yet) without breaking it.
+    current = 0
+    current_end = None
+    current_start = None
+    for date, count in reversed(days):
+        if count > 0:
+            current += 1
+            current_start = date
+            if current_end is None:
+                current_end = date
+        else:
+            if date == today:
+                continue
+            break
+
+    return {
+        "current": current,
+        "current_range": (current_start, current_end),
+        "longest": longest,
+        "longest_range": longest_run,
     }
 
 
@@ -178,6 +247,40 @@ def render_top_langs_svg(langs):
     return "\n".join(lines)
 
 
+def fmt_range(range_pair):
+    start, end = range_pair
+    if not start:
+        return "N/A"
+    fmt = lambda s: datetime.date.fromisoformat(s).strftime("%b %-d")
+    if start == end:
+        return fmt(start)
+    return f"{fmt(start)} - {fmt(end)}"
+
+
+def render_streak_svg(total_contributions, streaks):
+    width, height = 495, 195
+    col_w = width / 3
+    lines = []
+    lines.append(f'<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" xmlns="http://www.w3.org/2000/svg">')
+    lines.append(f'<rect x="0.5" y="0.5" rx="8" width="{width-1}" height="{height-1}" fill="{BG}" stroke="{BORDER}"/>')
+    lines.append(f'<line x1="{col_w:.1f}" y1="30" x2="{col_w:.1f}" y2="{height-30}" stroke="{BORDER}"/>')
+    lines.append(f'<line x1="{col_w*2:.1f}" y1="30" x2="{col_w*2:.1f}" y2="{height-30}" stroke="{BORDER}"/>')
+
+    columns = [
+        ("Total Contributions", total_contributions, None),
+        ("Current Streak", streaks["current"], fmt_range(streaks["current_range"])),
+        ("Longest Streak", streaks["longest"], fmt_range(streaks["longest_range"])),
+    ]
+    for i, (label, value, subrange) in enumerate(columns):
+        cx = col_w * i + col_w / 2
+        lines.append(f'<text x="{cx:.1f}" y="80" fill="{TITLE}" font-family="Segoe UI, Ubuntu, sans-serif" font-size="34" font-weight="700" text-anchor="middle">{value}</text>')
+        lines.append(f'<text x="{cx:.1f}" y="110" fill="{TEXT}" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" text-anchor="middle">{label}</text>')
+        if subrange:
+            lines.append(f'<text x="{cx:.1f}" y="130" fill="{TEXT}" font-family="Segoe UI, Ubuntu, sans-serif" font-size="11" text-anchor="middle" opacity="0.7">{subrange}</text>')
+    lines.append("</svg>")
+    return "\n".join(lines)
+
+
 def main():
     if not TOKEN:
         sys.exit("GH_TOKEN/GITHUB_TOKEN env var required")
@@ -187,6 +290,8 @@ def main():
 
     stats = fetch_stats()
     langs = fetch_top_langs()
+    total_contributions, days = fetch_contribution_calendar()
+    streaks = compute_streaks(days)
 
     with open(os.path.join(out_dir, "github-stats.svg"), "w") as f:
         f.write(render_stats_svg(stats))
@@ -194,7 +299,10 @@ def main():
     with open(os.path.join(out_dir, "top-langs.svg"), "w") as f:
         f.write(render_top_langs_svg(langs))
 
-    print("Generated assets/github-stats.svg and assets/top-langs.svg")
+    with open(os.path.join(out_dir, "streak-stats.svg"), "w") as f:
+        f.write(render_streak_svg(total_contributions, streaks))
+
+    print("Generated assets/github-stats.svg, assets/top-langs.svg, assets/streak-stats.svg")
 
 
 if __name__ == "__main__":

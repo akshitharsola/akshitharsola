@@ -189,7 +189,7 @@
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=akshitharsola&theme=github-dark-blue&hide_border=true" />
+  <img src="assets/streak-stats.svg" />
 </div>
 
 <br/>
