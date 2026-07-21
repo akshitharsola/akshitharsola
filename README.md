@@ -57,7 +57,6 @@
 <img src="https://skillicons.dev/icons?i=fastapi" title="FastAPI" alt="FastAPI" />
 <img src="https://skillicons.dev/icons?i=postgres" title="PostgreSQL" alt="PostgreSQL" />
 <img src="https://skillicons.dev/icons?i=mysql" title="MySQL" alt="MySQL" />
-<img src="https://skillicons.dev/icons?i=mssql" title="SQL Server" alt="SQL Server" />
 <img src="https://skillicons.dev/icons?i=docker" title="Docker" alt="Docker" />
 <img src="https://skillicons.dev/icons?i=aws" title="AWS" alt="AWS" />
 <img src="https://skillicons.dev/icons?i=gcp" title="Google Cloud Platform" alt="GCP" />
