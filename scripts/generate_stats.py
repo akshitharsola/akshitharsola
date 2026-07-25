@@ -38,7 +38,12 @@ def gh_graphql(query, variables):
         method="POST",
     )
     with urllib.request.urlopen(req) as resp:
-        return json.load(resp)
+        result = json.load(resp)
+    if result.get("errors"):
+        sys.exit(f"GraphQL errors: {json.dumps(result['errors'])}")
+    if result.get("data", {}).get("user") is None:
+        sys.exit(f"GraphQL returned null user (check token scopes): {json.dumps(result)}")
+    return result
 
 
 def fetch_stats():
