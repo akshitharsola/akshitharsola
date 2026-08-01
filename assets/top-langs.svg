@@ -2,13 +2,13 @@
 <rect x="0.5" y="0.5" rx="6" width="379" height="283" fill="#0d1117" stroke="#30363d"/>
 <text x="25" y="35" fill="#58a6ff" font-family="Segoe UI, Ubuntu, sans-serif" font-size="18" font-weight="600">Most Used Languages</text>
 <g>
-<rect x="25.0" y="55" width="285.1" height="10" fill="#DA5B0B"/>
-<rect x="310.1" y="55" width="14.5" height="10" fill="#3572A5"/>
-<rect x="324.6" y="55" width="11.8" height="10" fill="#3178c6"/>
-<rect x="336.4" y="55" width="7.7" height="10" fill="#A97BFF"/>
-<rect x="344.0" y="55" width="3.9" height="10" fill="#F05138"/>
-<rect x="347.9" y="55" width="3.0" height="10" fill="#f1e05a"/>
-<rect x="350.9" y="55" width="2.2" height="10" fill="#e34c26"/>
+<rect x="25.0" y="55" width="285.0" height="10" fill="#DA5B0B"/>
+<rect x="310.0" y="55" width="14.5" height="10" fill="#3572A5"/>
+<rect x="324.5" y="55" width="11.8" height="10" fill="#3178c6"/>
+<rect x="336.3" y="55" width="7.6" height="10" fill="#A97BFF"/>
+<rect x="343.9" y="55" width="3.9" height="10" fill="#F05138"/>
+<rect x="347.8" y="55" width="3.0" height="10" fill="#f1e05a"/>
+<rect x="350.8" y="55" width="2.3" height="10" fill="#e34c26"/>
 <rect x="353.1" y="55" width="2.0" height="10" fill="#563d7c"/>
 </g>
 <circle cx="25" cy="90" r="5" fill="#DA5B0B"/>
