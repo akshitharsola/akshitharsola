@@ -10,7 +10,7 @@
 
 <!-- TYPING ANIMATION -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=764ba2&center=true&vCenter=true&width=750&lines=ML+Engineer+%26+Robotics+Researcher+%F0%9F%A4%96;Computer+Vision+%26+Sensor+Fusion+%F0%9F%91%81%EF%B8%8F;Autonomous+Systems+%7C+ROS2+%7C+SLAM+%F0%9F%9A%97;3x+Published+Researcher+%F0%9F%93%9A;Security+%26+AI+Agent+Builder+%F0%9F%94%90" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=764ba2&center=true&vCenter=true&width=750&lines=Data+Analyst+%7C+Power+Platform+%F0%9F%93%8A;Data+Engineer+%7C+ML+%26+Robotics+%F0%9F%A4%96;Computer+Vision+%26+Sensor+Fusion+%F0%9F%91%81%EF%B8%8F;Autonomous+Systems+%7C+ROS2+%7C+SLAM+%F0%9F%9A%97;3x+Published+Researcher+%F0%9F%93%9A" alt="Typing SVG" />
 </p>
 
 <br/>
@@ -39,6 +39,14 @@
 <img src="https://skillicons.dev/icons?i=swift" title="Swift" alt="Swift" />
 <img src="https://skillicons.dev/icons?i=ts" title="TypeScript" alt="TypeScript" />
 <img src="https://skillicons.dev/icons?i=js" title="JavaScript" alt="JavaScript" />
+
+<br/><br/>
+
+**Data & Analytics**
+
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?logo=powerbi&logoColor=black&style=flat)
+![DAX](https://img.shields.io/badge/DAX-217346?logo=microsoftexcel&logoColor=white&style=flat)
+![Excel](https://img.shields.io/badge/Excel-217346?logo=microsoftexcel&logoColor=white&style=flat)
 
 <br/><br/>
 
@@ -170,6 +178,23 @@
 ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=flat)
 
 </td>
+</tr>
+<tr>
+<td width="50%">
+
+### 📊 [Data Jobs Market Dashboard](https://github.com/akshitharsola/powerbi-job-market-dashboard)
+> Power BI · Power Query · DAX · Star Schema Modeling
+
+- Two dashboards analyzing 2024 data-job postings — market KPIs, salary trends, geographic distribution
+- **Star schema data model** with fact/dimension tables for scalable analysis
+- Power Query ETL pipeline + DAX measures for salary and job-count aggregation
+- Interactive slicers, bookmarks, and drill-through reporting
+
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?logo=powerbi&logoColor=black&style=flat)
+![DAX](https://img.shields.io/badge/DAX-217346?logo=microsoftexcel&logoColor=white&style=flat)
+
+</td>
+<td width="50%"></td>
 </tr>
 </table>
 
