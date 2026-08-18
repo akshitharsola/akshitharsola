@@ -46,7 +46,6 @@
 
 <img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/icons/file_type_powerbi.svg" title="Power BI" alt="Power BI" width="48" height="48" />
 <img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/icons/file_type_excel.svg" title="Excel" alt="Excel" width="48" height="48" />
-<img src="https://img.shields.io/badge/DAX-yellow?style=flat" title="DAX" alt="DAX" />
 
 <br/><br/>
 
