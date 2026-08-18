@@ -10,7 +10,7 @@
 
 <!-- TYPING ANIMATION -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=764ba2&center=true&vCenter=true&width=750&lines=Data+Analyst+%7C+Power+Platform+%F0%9F%93%8A;Data+Engineer+%7C+ML+%26+Robotics+%F0%9F%A4%96;Computer+Vision+%26+Sensor+Fusion+%F0%9F%91%81%EF%B8%8F;Autonomous+Systems+%7C+ROS2+%7C+SLAM+%F0%9F%9A%97;3x+Published+Researcher+%F0%9F%93%9A" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=764ba2&center=true&vCenter=true&width=750&lines=Data+Analyst+%7C+Power+Platform+%F0%9F%93%8A;Data+Engineer+%F0%9F%97%84%EF%B8%8F;ML+%26+Robotics+%F0%9F%A6%BE;Computer+Vision+%26+Sensor+Fusion+%F0%9F%91%81%EF%B8%8F;Autonomous+Systems+%7C+ROS2+%7C+SLAM+%F0%9F%9A%97;3x+Published+Researcher+%F0%9F%93%9A" alt="Typing SVG" />
 </p>
 
 <br/>
@@ -44,9 +44,9 @@
 
 **Data & Analytics**
 
-![Power BI](https://img.shields.io/badge/Power_BI-F2C811?logo=powerbi&logoColor=black&style=flat)
-![DAX](https://img.shields.io/badge/DAX-217346?logo=microsoftexcel&logoColor=white&style=flat)
-![Excel](https://img.shields.io/badge/Excel-217346?logo=microsoftexcel&logoColor=white&style=flat)
+<img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/icons/file_type_powerbi.svg" title="Power BI" alt="Power BI" width="48" height="48" />
+<img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/icons/file_type_excel.svg" title="Excel" alt="Excel" width="48" height="48" />
+![DAX](https://img.shields.io/badge/DAX-yellow?style=flat)
 
 <br/><br/>
 
@@ -190,8 +190,8 @@
 - Power Query ETL pipeline + DAX measures for salary and job-count aggregation
 - Interactive slicers, bookmarks, and drill-through reporting
 
-![Power BI](https://img.shields.io/badge/Power_BI-F2C811?logo=powerbi&logoColor=black&style=flat)
-![DAX](https://img.shields.io/badge/DAX-217346?logo=microsoftexcel&logoColor=white&style=flat)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?logoColor=black&style=flat)
+![DAX](https://img.shields.io/badge/DAX-yellow?style=flat)
 
 </td>
 <td width="50%"></td>
