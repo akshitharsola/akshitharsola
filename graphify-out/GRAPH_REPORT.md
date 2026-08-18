@@ -1,7 +1,7 @@
 # Graph Report - /Users/akshitharsola/Documents/TEMP/GitHub  (2026-08-18)
 
 ## Corpus Check
-- 3 files · ~128,219 words
+- 3 files · ~128,223 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
