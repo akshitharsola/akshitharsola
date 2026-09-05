@@ -233,7 +233,7 @@
 ## 📉 Activity Graph
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=akshitharsola&theme=github-compact&hide_border=true&area=true" />
+  <img src="https://raw.githubusercontent.com/akshitharsola/akshitharsola/main/assets/activity-graph.svg" />
 </div>
 
 <br/>

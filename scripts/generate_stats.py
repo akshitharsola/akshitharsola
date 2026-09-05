@@ -286,6 +286,51 @@ def render_streak_svg(total_contributions, streaks):
     return "\n".join(lines)
 
 
+def render_activity_graph_svg(days):
+    """Weekly-aggregated area chart of contributions over the last ~52 weeks,
+    styled to resemble github-readme-activity-graph without depending on it."""
+    weeks = []
+    week = []
+    for date, count in days:
+        week.append(count)
+        if len(week) == 7:
+            weeks.append(sum(week))
+            week = []
+    if week:
+        weeks.append(sum(week))
+
+    width, height = 800, 220
+    pad_l, pad_r, pad_t, pad_b = 40, 20, 30, 30
+    plot_w = width - pad_l - pad_r
+    plot_h = height - pad_t - pad_b
+    max_val = max(weeks) or 1
+    n = len(weeks)
+    step = plot_w / max(n - 1, 1)
+
+    points = []
+    for i, v in enumerate(weeks):
+        x = pad_l + i * step
+        y = pad_t + plot_h - (v / max_val) * plot_h
+        points.append((x, y))
+
+    line_path = "M " + " L ".join(f"{x:.1f},{y:.1f}" for x, y in points)
+    area_path = (
+        line_path
+        + f" L {points[-1][0]:.1f},{pad_t + plot_h:.1f}"
+        + f" L {points[0][0]:.1f},{pad_t + plot_h:.1f} Z"
+    )
+
+    lines = []
+    lines.append(f'<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" xmlns="http://www.w3.org/2000/svg">')
+    lines.append(f'<rect x="0.5" y="0.5" rx="6" width="{width-1}" height="{height-1}" fill="{BG}" stroke="{BORDER}"/>')
+    lines.append(f'<text x="20" y="22" fill="{TITLE}" font-family="Segoe UI, Ubuntu, sans-serif" font-size="15" font-weight="600">Contribution Activity</text>')
+    lines.append(f'<line x1="{pad_l}" y1="{pad_t+plot_h}" x2="{width-pad_r}" y2="{pad_t+plot_h}" stroke="{BORDER}"/>')
+    lines.append(f'<path d="{area_path}" fill="{ICON}" fill-opacity="0.15" stroke="none"/>')
+    lines.append(f'<path d="{line_path}" fill="none" stroke="{ICON}" stroke-width="2"/>')
+    lines.append("</svg>")
+    return "\n".join(lines)
+
+
 def main():
     if not TOKEN:
         sys.exit("GH_TOKEN/GITHUB_TOKEN env var required")
@@ -307,7 +352,10 @@ def main():
     with open(os.path.join(out_dir, "streak-stats.svg"), "w") as f:
         f.write(render_streak_svg(total_contributions, streaks))
 
-    print("Generated assets/github-stats.svg, assets/top-langs.svg, assets/streak-stats.svg")
+    with open(os.path.join(out_dir, "activity-graph.svg"), "w") as f:
+        f.write(render_activity_graph_svg(days))
+
+    print("Generated assets/github-stats.svg, assets/top-langs.svg, assets/streak-stats.svg, assets/activity-graph.svg")
 
 
 if __name__ == "__main__":
