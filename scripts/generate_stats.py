@@ -290,17 +290,20 @@ def render_activity_graph_svg(days):
     """Weekly-aggregated area chart of contributions over the last ~52 weeks,
     styled to resemble github-readme-activity-graph without depending on it."""
     weeks = []
+    week_dates = []
     week = []
     for date, count in days:
         week.append(count)
         if len(week) == 7:
             weeks.append(sum(week))
+            week_dates.append(date)
             week = []
     if week:
         weeks.append(sum(week))
+        week_dates.append(days[-1][0])
 
-    width, height = 800, 220
-    pad_l, pad_r, pad_t, pad_b = 40, 20, 30, 30
+    width, height = 800, 260
+    pad_l, pad_r, pad_t, pad_b = 45, 25, 45, 45
     plot_w = width - pad_l - pad_r
     plot_h = height - pad_t - pad_b
     max_val = max(weeks) or 1
@@ -313,20 +316,63 @@ def render_activity_graph_svg(days):
         y = pad_t + plot_h - (v / max_val) * plot_h
         points.append((x, y))
 
-    line_path = "M " + " L ".join(f"{x:.1f},{y:.1f}" for x, y in points)
+    def smooth_path(pts):
+        if len(pts) < 3:
+            return "M " + " L ".join(f"{x:.1f},{y:.1f}" for x, y in pts)
+        d = [f"M {pts[0][0]:.1f},{pts[0][1]:.1f}"]
+        for i in range(len(pts) - 1):
+            x0, y0 = pts[i]
+            x1, y1 = pts[i + 1]
+            mx = (x0 + x1) / 2
+            d.append(f"C {mx:.1f},{y0:.1f} {mx:.1f},{y1:.1f} {x1:.1f},{y1:.1f}")
+        return " ".join(d)
+
+    line_path = smooth_path(points)
     area_path = (
         line_path
         + f" L {points[-1][0]:.1f},{pad_t + plot_h:.1f}"
         + f" L {points[0][0]:.1f},{pad_t + plot_h:.1f} Z"
     )
 
+    # Horizontal gridlines at 25/50/75/100% of max, with value labels.
+    grid_lines = []
+    for frac in (0.25, 0.5, 0.75, 1.0):
+        gy = pad_t + plot_h - frac * plot_h
+        grid_lines.append(f'<line x1="{pad_l}" y1="{gy:.1f}" x2="{width-pad_r}" y2="{gy:.1f}" stroke="{BORDER}" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>')
+        grid_lines.append(f'<text x="{pad_l-8}" y="{gy+4:.1f}" fill="{TEXT}" font-family="Segoe UI, Ubuntu, sans-serif" font-size="10" text-anchor="end" opacity="0.6">{round(frac*max_val)}</text>')
+
+    # Month labels along the x-axis, deduplicated.
+    month_labels = []
+    seen_months = set()
+    for i, d in enumerate(week_dates):
+        month = d[:7]
+        if month not in seen_months:
+            seen_months.add(month)
+            x = pad_l + i * step
+            label = datetime.date.fromisoformat(d).strftime("%b")
+            month_labels.append(f'<text x="{x:.1f}" y="{height-pad_b+18}" fill="{TEXT}" font-family="Segoe UI, Ubuntu, sans-serif" font-size="10" text-anchor="middle" opacity="0.6">{label}</text>')
+
+    # Highlight peak week.
+    peak_i = weeks.index(max(weeks))
+    peak_x, peak_y = points[peak_i]
+
     lines = []
     lines.append(f'<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" xmlns="http://www.w3.org/2000/svg">')
-    lines.append(f'<rect x="0.5" y="0.5" rx="6" width="{width-1}" height="{height-1}" fill="{BG}" stroke="{BORDER}"/>')
-    lines.append(f'<text x="20" y="22" fill="{TITLE}" font-family="Segoe UI, Ubuntu, sans-serif" font-size="15" font-weight="600">Contribution Activity</text>')
-    lines.append(f'<line x1="{pad_l}" y1="{pad_t+plot_h}" x2="{width-pad_r}" y2="{pad_t+plot_h}" stroke="{BORDER}"/>')
-    lines.append(f'<path d="{area_path}" fill="{ICON}" fill-opacity="0.15" stroke="none"/>')
-    lines.append(f'<path d="{line_path}" fill="none" stroke="{ICON}" stroke-width="2"/>')
+    lines.append('<defs>')
+    lines.append(f'<linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">')
+    lines.append(f'<stop offset="0%" stop-color="{ICON}" stop-opacity="0.45"/>')
+    lines.append(f'<stop offset="100%" stop-color="{ICON}" stop-opacity="0.02"/>')
+    lines.append('</linearGradient>')
+    lines.append('</defs>')
+    lines.append(f'<rect x="0.5" y="0.5" rx="8" width="{width-1}" height="{height-1}" fill="{BG}" stroke="{BORDER}"/>')
+    lines.append(f'<text x="20" y="26" fill="{TITLE}" font-family="Segoe UI, Ubuntu, sans-serif" font-size="16" font-weight="700">Contribution Activity</text>')
+    lines.append(f'<text x="20" y="42" fill="{TEXT}" font-family="Segoe UI, Ubuntu, sans-serif" font-size="11" opacity="0.6">Weekly contributions over the last year</text>')
+    lines.extend(grid_lines)
+    lines.extend(month_labels)
+    lines.append(f'<path d="{area_path}" fill="url(#areaFill)" stroke="none"/>')
+    lines.append(f'<path d="{line_path}" fill="none" stroke="{ICON}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>')
+    lines.append(f'<circle cx="{peak_x:.1f}" cy="{peak_y:.1f}" r="4" fill="{BG}" stroke="{ICON}" stroke-width="2"/>')
+    lines.append(f'<text x="{peak_x:.1f}" y="{peak_y-12:.1f}" fill="{ICON}" font-family="Segoe UI, Ubuntu, sans-serif" font-size="11" font-weight="600" text-anchor="middle">{weeks[peak_i]}</text>')
     lines.append("</svg>")
     return "\n".join(lines)
 
