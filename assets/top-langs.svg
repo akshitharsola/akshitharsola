@@ -12,7 +12,7 @@
 <rect x="353.1" y="55" width="2.0" height="10" fill="#563d7c"/>
 </g>
 <circle cx="25" cy="90" r="5" fill="#DA5B0B"/>
-<text x="39" y="95" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13">Jupyter Notebook 86.4%</text>
+<text x="39" y="95" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13">Jupyter Notebook 86.3%</text>
 <circle cx="195" cy="90" r="5" fill="#3572A5"/>
 <text x="209" y="95" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13">Python 4.4%</text>
 <circle cx="25" cy="116" r="5" fill="#3178c6"/>
