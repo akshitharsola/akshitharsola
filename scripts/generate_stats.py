@@ -302,8 +302,8 @@ def render_activity_graph_svg(days):
         weeks.append(sum(week))
         week_dates.append(days[-1][0])
 
-    width, height = 800, 260
-    pad_l, pad_r, pad_t, pad_b = 45, 25, 45, 45
+    width, height = 800, 300
+    pad_l, pad_r, pad_t, pad_b = 45, 25, 60, 60
     plot_w = width - pad_l - pad_r
     plot_h = height - pad_t - pad_b
     max_val = max(weeks) or 1
@@ -350,7 +350,7 @@ def render_activity_graph_svg(days):
             seen_months.add(month)
             x = pad_l + i * step
             label = datetime.date.fromisoformat(d).strftime("%b")
-            month_labels.append(f'<text x="{x:.1f}" y="{height-pad_b+18}" fill="{TEXT}" font-family="Segoe UI, Ubuntu, sans-serif" font-size="10" text-anchor="middle" opacity="0.6">{label}</text>')
+            month_labels.append(f'<text x="{x:.1f}" y="{height-pad_b+22}" fill="{TEXT}" font-family="Segoe UI, Ubuntu, sans-serif" font-size="11" text-anchor="middle" opacity="0.6">{label}</text>')
 
     # Highlight peak week.
     peak_i = weeks.index(max(weeks))
