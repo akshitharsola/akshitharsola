@@ -2,27 +2,27 @@
 <rect x="0.5" y="0.5" rx="6" width="379" height="283" fill="#0d1117" stroke="#30363d"/>
 <text x="25" y="35" fill="#58a6ff" font-family="Segoe UI, Ubuntu, sans-serif" font-size="18" font-weight="600">Most Used Languages</text>
 <g>
-<rect x="25.0" y="55" width="277.1" height="10" fill="#DA5B0B"/>
-<rect x="302.1" y="55" width="16.2" height="10" fill="#3572A5"/>
-<rect x="318.3" y="55" width="11.4" height="10" fill="#3178c6"/>
-<rect x="329.7" y="55" width="8.4" height="10" fill="#e34c26"/>
-<rect x="338.1" y="55" width="8.3" height="10" fill="#A97BFF"/>
+<rect x="25.0" y="55" width="275.6" height="10" fill="#DA5B0B"/>
+<rect x="300.6" y="55" width="16.3" height="10" fill="#3572A5"/>
+<rect x="316.9" y="55" width="11.4" height="10" fill="#3178c6"/>
+<rect x="328.3" y="55" width="9.9" height="10" fill="#e34c26"/>
+<rect x="338.2" y="55" width="8.2" height="10" fill="#A97BFF"/>
 <rect x="346.4" y="55" width="3.8" height="10" fill="#F05138"/>
 <rect x="350.2" y="55" width="2.9" height="10" fill="#f1e05a"/>
 <rect x="353.1" y="55" width="2.0" height="10" fill="#563d7c"/>
 </g>
 <circle cx="25" cy="90" r="5" fill="#DA5B0B"/>
-<text x="39" y="95" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13">Jupyter Notebook 84.0%</text>
+<text x="39" y="95" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13">Jupyter Notebook 83.5%</text>
 <circle cx="195" cy="90" r="5" fill="#3572A5"/>
 <text x="209" y="95" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13">Python 4.9%</text>
 <circle cx="25" cy="116" r="5" fill="#3178c6"/>
-<text x="39" y="121" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13">TypeScript 3.5%</text>
+<text x="39" y="121" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13">TypeScript 3.4%</text>
 <circle cx="195" cy="116" r="5" fill="#e34c26"/>
-<text x="209" y="121" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13">HTML 2.5%</text>
+<text x="209" y="121" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13">HTML 3.0%</text>
 <circle cx="25" cy="142" r="5" fill="#A97BFF"/>
 <text x="39" y="147" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13">Kotlin 2.5%</text>
 <circle cx="195" cy="142" r="5" fill="#F05138"/>
-<text x="209" y="147" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13">Swift 1.2%</text>
+<text x="209" y="147" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13">Swift 1.1%</text>
 <circle cx="25" cy="168" r="5" fill="#f1e05a"/>
 <text x="39" y="173" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13">JavaScript 0.9%</text>
 <circle cx="195" cy="168" r="5" fill="#563d7c"/>
