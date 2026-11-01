@@ -10,7 +10,7 @@
 
 <!-- TYPING ANIMATION -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=764ba2&center=true&vCenter=true&width=750&lines=Data+Analyst+%7C+Power+Platform;ML+%26+Robotics;Computer+Vision+%26+Sensor+Fusion;Autonomous+Systems+%7C+ROS2+%7C+SLAM;3x+Published+Researcher" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=764ba2&center=true&vCenter=true&width=750&lines=Data+Analyst+%7C+Power+Platform;ML+%26+Robotics;Computer+Vision+%26+Imitation+Learning;Robot+Learning+%7C+ROS2+%7C+LeRobot;3x+Published+Researcher" alt="Typing SVG" />
 </p>
 
 <br/>
@@ -114,34 +114,28 @@
 <tr>
 <td width="50%">
 
-### 🦾 Autonomous Agricultural Robotics (In Progress)
+### 🦾 [Learning to Pick: Imitation-Learning Strawberry Harvesting](https://github.com/akshitharsola/learning-to-pick-lerobot-so101)
 > Intelligent Robotics Major Project · University of Galway
 
-- Autonomous strawberry harvesting robot with **multi-sensor fusion** (LiDAR, IMU, camera, GNSS-RTK)
-- 50+ sensor readings/second · **95% localization accuracy**
-- ROS2 + Kalman filtering with RTK-GPS — position drift **< 2cm** over 100m
-- Reduced manual intervention by **70%** in field trials
+- Compared ACT, Diffusion Policy and SmolVLA on a low-cost SO-101 arm
+- Final SmolVLA model: **8/10** pick-and-place trials (pilot-scale result)
+- Async inference; 5-step DDIM raised diffusion control from 0.9 Hz to 13.5 Hz
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=flat)
-![ROS2](https://img.shields.io/badge/ROS2-22314E?logo=ros&logoColor=white&style=flat)
-![SLAM](https://img.shields.io/badge/SLAM-FF6B35?style=flat)
-![LiDAR](https://img.shields.io/badge/LiDAR-00B4D8?style=flat)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white&style=flat)
+![Hugging Face](https://img.shields.io/badge/LeRobot-FFD21E?logo=huggingface&logoColor=black&style=flat)
 
 </td>
 <td width="50%">
 
 ### 👁️ [AutoVision — Automated Object Annotation](https://github.com/akshitharsola/AutomationIMG)
-> Automated object annotation pipeline — Python · OpenCV · CNN · 60% annotation time reduction
+> Semi-automated image annotation tool — Python · OpenCV · PyQt5 · 60% annotation time reduction
 
 - Reduced annotation time by **60%** (5h → 2h per 100 images)
-- Data augmentation pipeline generating **2,000+ synthetic samples**
-- **15% robustness improvement** across diverse lighting conditions
-- False positives reduced from 18% to 9%
+- Canny edge-based object detection with a PyQt5 GUI and quality assessment
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=flat)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white&style=flat)
-![CNN](https://img.shields.io/badge/CNN-FF6B6B?style=flat)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white&style=flat)
 
 </td>
 </tr>
