@@ -2,17 +2,17 @@
 <rect x="0.5" y="0.5" rx="6" width="379" height="283" fill="#0d1117" stroke="#30363d"/>
 <text x="25" y="35" fill="#58a6ff" font-family="Segoe UI, Ubuntu, sans-serif" font-size="18" font-weight="600">Most Used Languages</text>
 <g>
-<rect x="25.0" y="55" width="275.6" height="10" fill="#DA5B0B"/>
-<rect x="300.6" y="55" width="16.3" height="10" fill="#3572A5"/>
-<rect x="316.9" y="55" width="11.4" height="10" fill="#3178c6"/>
-<rect x="328.3" y="55" width="9.9" height="10" fill="#e34c26"/>
-<rect x="338.2" y="55" width="8.2" height="10" fill="#A97BFF"/>
-<rect x="346.4" y="55" width="3.8" height="10" fill="#F05138"/>
-<rect x="350.2" y="55" width="2.9" height="10" fill="#f1e05a"/>
-<rect x="353.1" y="55" width="2.0" height="10" fill="#563d7c"/>
+<rect x="25.0" y="55" width="275.4" height="10" fill="#DA5B0B"/>
+<rect x="300.4" y="55" width="16.3" height="10" fill="#3572A5"/>
+<rect x="316.6" y="55" width="11.4" height="10" fill="#3178c6"/>
+<rect x="328.0" y="55" width="10.0" height="10" fill="#e34c26"/>
+<rect x="338.0" y="55" width="8.2" height="10" fill="#A97BFF"/>
+<rect x="346.2" y="55" width="3.8" height="10" fill="#F05138"/>
+<rect x="350.0" y="55" width="3.0" height="10" fill="#f1e05a"/>
+<rect x="353.0" y="55" width="2.0" height="10" fill="#563d7c"/>
 </g>
 <circle cx="25" cy="90" r="5" fill="#DA5B0B"/>
-<text x="39" y="95" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13">Jupyter Notebook 83.5%</text>
+<text x="39" y="95" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13">Jupyter Notebook 83.4%</text>
 <circle cx="195" cy="90" r="5" fill="#3572A5"/>
 <text x="209" y="95" fill="#c9d1d9" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13">Python 4.9%</text>
 <circle cx="25" cy="116" r="5" fill="#3178c6"/>
